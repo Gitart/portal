@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<%@ Page Language="VB" %>
+
+<html dir="ltr">
+
+<head runat="server">
+<meta http-equiv="Content-Language" content="en-us" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Карточка объявления № 0001</title>
+
+<style type="text/css">
+
+html{
+font-family: Calibri ;
+font-size: 14px;
+}
+
+body {
+
+}
+span {
+vertical-align: middle;
+width: 150px;
+display:inline-block;
+padding:3px;
+}
+
+.divss {
+vertical-align: middle;
+}
+#base {
+padding: 10px;
+background-color: #F3F2F1;
+border: 2px solid #3366FF ;
+color: #333333 ;
+border-radius:3px;
+width:800px;
+margin-left:-400px;
+left:50%;
+position:absolute;
+box-shadow: 10px 2px 10px #CCC;
+
+}
+
+select, input {
+width:350px;
+border: 1px solid #c0c0c0;
+padding: 3px;
+margin:3px;
+}
+
+textarea {
+border: 1px solid #c0c0c0;
+padding: 3px;
+margin:3px;
+}
+
+h2{
+color:#0033CC; padding: 0px; margin: 0px;
+}
+</style>
+</head>
+
+<body>
+
+<form id="form1" runat="server">
+<div id="base">
+<h2>Карточка объявления № 0001</h2>
+<small >Срок актуальности до <% =Now()%></small>
+<hr>
+<div>
+<span>Тип</span>
+<select name="Select1">
+<option>Обмен</option>
+<option>Продажа</option>
+<option>Куплю</option>
+<option>Ищу</option>
+<option>Отдам</option>
+<option>Возьму</option>
+</select>
+
+<br>
+<span>Группа</span>
+<select name="Select1">
+<option>Элетроника</option>
+<option>Мобильники</option>
+<option>Машины</option>
+<option>Квартиры</option>
+<option>Драгоценности</option>
+<option>Мебель</option>
+</select>
+
+<br>
+<span>Наименование</span>
+<select name="Select1">
+<option>Мобильный телефон Самсунг</option>
+<option>Телефон Сони</option>
+<option>Подольский район</option>
+<option>Оболнский район</option>
+<option>Набережная</option>
+<option>Диван мебель "Мария"</option>
+</select>
+
+<br>
+<span>Количество</span>
+<input name="Text1" type="text" style="width: 71px" />
+
+<br>
+<span>Сумма</span>
+<input name="Text1" type="text" style="width: 70px" />
+<select name="Select1" style="width: 88px" >
+<option>Гривна</option>
+<option>Доллар</option>
+<option>Евро</option>
+</select>
+
+<br>
+<span>Краткое описание</span>
+<textarea name="TextArea1" style="width: 602px; height: 56px"></textarea>
+
+<hr>
+<span style="font-weight: bold ;" >Меняю на</span>
+
+<br>
+<span>Группа</span>
+<select name="Select1">
+<option>Элетроника</option>
+<option>Мобильники</option>
+<option>Машины</option>
+<option>Квартиры</option>
+<option>Драгоценности</option>
+<option>Мебель</option>
+</select>
+
+<br>
+<span>Наименование</span>
+<select name="Select1">
+<option>Мобильный телефон Самсунг</option>
+<option>Телефон Сони</option>
+<option>Подольский район</option>
+<option>Оболнский район</option>
+<option>Набережная</option>
+<option>Диван мебель "Мария"</option>
+</select>
+
+<br>
+<span>Количество</span>
+<input name="Text1" type="text" style="width: 80px" />
+
+<br>
+<span>Сумма</span>
+<input name="Text1" type="text" style="width: 79px" />
+<select name="Select1" style="width: 88px" >
+<option>Гривна</option>
+<option>Доллар</option>
+<option>Евро</option>
+</select>
+
+<br>
+<span>Краткое описание</span>
+<textarea name="TextArea1" style="width: 602px; height: 56px"></textarea>
+<hr>
+<input name="Reset1" type="reset" value="Отказаться" />
+<input name="Reset1" type="reset" value="Сохранить" />
+
+<br>
+<pre>
+Внимание.
+Ваше объявление будет сохраняться на протяжении месяца.
+Для продолжения срока Вы должны ввести его еще раз или оплатить подписку на 3 месяца.
+</pre>
+
+</div>
+</div>
+</form>
+</body>
+</html>
